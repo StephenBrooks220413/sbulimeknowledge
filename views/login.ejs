@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="google-site-verification" content="08ysSt4y4xP43FkERUcVNM2iJjh_NVmMiQd4Df0Rnrw" />
+    <meta name="keywords" content="Life coach, Love Coach, Finance Coach">
+    <meta description="Receive guidance and coaching from Sublime Knowledge, one on one teaching and or a book to cover topics." >
+    <title>Sublime Knowledge - Login</title>
+    <!-- MDB icon -->
+    <link rel="icon" href="/img/newLogo.png" type="image/x-icon">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Whisper&display=swap" rel="stylesheet">
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <!-- Material Design Bootstrap -->
+    <link rel="stylesheet" href="/css/mdb.min.css">
+    <!-- Your custom styles (optional) -->
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <%- include('layouts/navbar') -%>
+<div class="container-fluid" style="margin-top: 110px;">
+    <div class="container text-center">
+       <h1 class="display-4 text-white">Member Login</h1>
+
+       <!-- Default form login -->
+       <form class="text-center mt-3 p-5" action="#!">
+
+           <!-- Email -->
+           <input type="email" id="defaultLoginFormEmail" class="form-control mb-4" placeholder="E-mail">
+
+           <!-- Password -->
+           <input type="password" id="defaultLoginFormPassword" class="form-control mb-4" placeholder="Password">
+
+           <div class="d-flex justify-content-around">
+               <div>
+                   <!-- Remember me -->
+                   <div class="custom-control custom-checkbox">
+                       <input type="checkbox" class="custom-control-input" id="defaultLoginFormRemember">
+                       <label class="custom-control-label" for="defaultLoginFormRemember">Remember me</label>
+                   </div>
+               </div>
+               <div>
+                   <!-- Forgot password -->
+                   <a href="">Forgot password?</a>
+               </div>
+           </div>
+
+           <!-- Sign in button -->
+           <button class="btn btn-info btn-block my-4" type="submit">Sign in</button>
+
+           <!-- Register -->
+           <p>Not a member?
+               <a href="/auth/register">Register</a>
+           </p>
+
+       </form>
+       <!-- Default form login -->
+
+    </div>
+</div>
+
+
+<%- include('layouts/footer') -%>
+
+</body>
+</html>
